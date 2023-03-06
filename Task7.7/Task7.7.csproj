@@ -45,7 +45,10 @@
   <ItemGroup>
     <Compile Include="Buyer.cs" />
     <Compile Include="Cart.cs" />
-    <Compile Include="Delivery.cs" />
+    <Compile Include="Delivery\Delivery.cs" />
+    <Compile Include="Delivery\DeliveryToHome.cs" />
+    <Compile Include="Delivery\SelfPickup.cs" />
+    <Compile Include="Order.cs" />
     <Compile Include="Product.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

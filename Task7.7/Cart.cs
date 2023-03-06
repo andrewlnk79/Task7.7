@@ -18,5 +18,7 @@ namespace Task7._7
             TotalCount = totalCount;
             TotalPrice = totalPrice;
         }
+        
+        
     }
 }

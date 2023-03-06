@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Task7._7
+namespace Task7._7.Delivery
 {
-    internal class Delivery
+    internal abstract class Delivery
     {
         private string Adress { get; set; }
         private string Name { get; set; }
@@ -18,7 +18,6 @@ namespace Task7._7
             Name = name;
             Phone = phone;
         }
-
-        
+        public abstract void MakeDelivery();
     }
 }
