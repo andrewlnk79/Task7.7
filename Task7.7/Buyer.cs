@@ -8,7 +8,9 @@ namespace Task7._7
 {
     internal abstract class Buyer
     {
-        protected string Name { get; set; }
+        private string name;
+
+        protected string Name { get => name; set => name = value; }
         protected string ContactPhone { get; set; }
         protected string Email { get; set; }
         protected string Adress { get; set; }

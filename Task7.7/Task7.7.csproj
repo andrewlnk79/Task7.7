@@ -48,6 +48,9 @@
     <Compile Include="Delivery\Delivery.cs" />
     <Compile Include="Delivery\DeliveryToHome.cs" />
     <Compile Include="Delivery\SelfPickup.cs" />
+    <Compile Include="Fruit.cs" />
+    <Compile Include="Meat.cs" />
+    <Compile Include="Buyer1.cs" />
     <Compile Include="Order.cs" />
     <Compile Include="Product.cs" />
     <Compile Include="Program.cs" />

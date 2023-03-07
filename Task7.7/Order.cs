@@ -8,14 +8,14 @@ namespace Task7._7
 {
     internal class Order<T,S,U>
     {
-        private int Id { get; set; }
+        private int OrderId { get; set; }
         private T List{ get; set; }
         private S buyer { get; set; }
         private U delivery { get; set; }
 
-        public Order(int id, T list, S buyer, U delivery)
+        public Order(int orderId, T list, S buyer, U delivery)
         {
-            Id = id;
+            OrderId = orderId;
             List = list;
             this.buyer = buyer;
             this.delivery = delivery;

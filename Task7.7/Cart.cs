@@ -12,6 +12,7 @@ namespace Task7._7
         private int TotalCount { get; set; }
         private double TotalPrice = 0.0;
         public double GetTotalPrice() { return TotalPrice; }
+        public Cart() { }
 
         public Cart(int totalCount, double totalPrice)
         {
@@ -19,7 +20,7 @@ namespace Task7._7
             TotalPrice = totalPrice;
         }
 
-        private List<Product> CollectProduct<T>(T product) where T : Product
+        private List<Product> AddProduct<T>(T product) where T : Product
         {
             List<Product> productsList = new List<Product>();
             productsList.Add(product);
