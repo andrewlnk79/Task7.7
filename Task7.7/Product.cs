@@ -20,6 +20,7 @@ namespace Task7._7
             Id = id;
             Price = price;
         }
+        public double GetPrice() { return Price; }
 
     }
 }

@@ -8,9 +8,10 @@ namespace Task7._7
 {
     internal class Cart
     {
-        
+
         private int TotalCount { get; set; }
-        private double TotalPrice { get ; set; }
+        private double TotalPrice = 0.0;
+        public double GetTotalPrice() { return TotalPrice; }
 
         public Cart(int totalCount, double totalPrice)
         {
@@ -23,12 +24,23 @@ namespace Task7._7
             List<Product> productsList = new List<Product>();
             productsList.Add(product);
             return productsList;
-            
+
+        }
+        private int Totalprice(List<Product> productList)
+        {
+            var tempPrice = 0;
+            foreach (Product i in productList)
+            {
+                if productList()[i] == i.GetPrice() {
+                    tempPrice += (int)i.GetPrice()
+                        }
+                return tempPrice;
+            }
         }
 
-        
 
-        
-        
+
+
+
     }
 }
