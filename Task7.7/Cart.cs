@@ -28,17 +28,15 @@ namespace Task7._7
         }
         private double Totalprice(List<Product> productList)
         {
-            var tempPrice = 0.0;
+            
             foreach (var product in productList)
             {
-                if (product.GetPrice() != 0)
-                {
-                    tempPrice += product.GetPrice();
-                }
+                TotalPrice += product.GetPrice();
 
             }
-            return tempPrice;
+            return TotalPrice;
         }
+
 
         
 
