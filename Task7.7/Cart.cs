@@ -8,16 +8,26 @@ namespace Task7._7
 {
     internal class Cart
     {
-        private int OrderId { get; set; }
+        
         private int TotalCount { get; set; }
-        private double TotalPrice { get; set; }
+        private double TotalPrice { get ; set; }
 
-        public Cart(int orderId, int totalCount, double totalPrice)
+        public Cart(int totalCount, double totalPrice)
         {
-            OrderId = orderId;
             TotalCount = totalCount;
             TotalPrice = totalPrice;
         }
+
+        private List<Product> CollectProduct<T>(T product) where T : Product
+        {
+            List<Product> productsList = new List<Product>();
+            productsList.Add(product);
+            return productsList;
+            
+        }
+
+        
+
         
         
     }
