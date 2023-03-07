@@ -17,6 +17,14 @@ namespace Task7._7
             DeliveryToHome Newdelivery = new DeliveryToHome(Nick.GetAdress(), Nick.GetName(),Nick.GetContactPhone());
             Cart cart = new Cart();
             cart.AddProduct(meat);
+            cart.AddProduct(fruit);
+           
+            
+
+            Order order = new Order(1, productList, Nick, DeliveryToHome Newdelivery = new DeliveryToHome(Nick.GetAdress(), Nick.GetName(), Nick.GetContactPhone()));
+            Console.WriteLine(order);
+            Console.ReadKey();
+
 
 
 

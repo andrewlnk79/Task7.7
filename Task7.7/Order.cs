@@ -13,6 +13,7 @@ namespace Task7._7
         private S buyer { get; set; }
         private U delivery { get; set; }
 
+
         public Order(int orderId, T list, S buyer, U delivery)
         {
             OrderId = orderId;
@@ -20,5 +21,10 @@ namespace Task7._7
             this.buyer = buyer;
             this.delivery = delivery;
         }
+        void deliveryInfo(U delivery)
+        {
+            Console.WriteLine(delivery.ToString); delivery.ToString
+        }
     }
+
 }

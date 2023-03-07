@@ -10,6 +10,7 @@ namespace Task7._7
     {
         public Buyer1(string name, string contactPhone, string email, string adress) : base(name, contactPhone, email, adress)
         {
+
         }
     }
 }

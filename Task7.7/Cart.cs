@@ -8,10 +8,11 @@ namespace Task7._7
 {
     internal class Cart
     {
-
+        //Нет метода TotalCount
         private int TotalCount { get; set; }
         private double TotalPrice = 0.0;
         public double GetTotalPrice() { return TotalPrice; }
+       public List<Product> productsList { get; set; }= new List<Product>();
         public Cart() { }
 
         public Cart(int totalCount, double totalPrice)
@@ -19,14 +20,15 @@ namespace Task7._7
             TotalCount = totalCount;
             TotalPrice = totalPrice;
         }
-
-        private List<Product> AddProduct<T>(T product) where T : Product
+        
+        public List<Product> AddProduct<T>(T product) where T : Product
         {
-            List<Product> productsList = new List<Product>();
+            
             productsList.Add(product);
             return productsList;
 
         }
+
         private double Totalprice(List<Product> productList)
         {
             
@@ -38,7 +40,11 @@ namespace Task7._7
             return TotalPrice;
         }
 
-
+        public void CartContains(List<Product> productList)
+        {
+            foreach(var product in productList)
+                Console.WriteLine(product);
+        }
         
 
 

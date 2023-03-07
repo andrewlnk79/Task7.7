@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace Task7._7
 {
-    internal class Meat
+    internal class Meat : Product
     {
+        public Meat(string name, string description, int id, double price) : base(name, description, id, price)
+        {
+        }
     }
 }
