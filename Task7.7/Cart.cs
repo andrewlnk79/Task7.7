@@ -10,7 +10,7 @@ namespace Task7._7
     {
         //Нет метода TotalCount
         private int TotalCount { get; set; }
-        private double TotalPrice = 0.0;
+        private double TotalPrice;
         public double GetTotalPrice() { return TotalPrice; }
        public List<Product> productsList { get; set; }= new List<Product>();
         public Cart() { }
